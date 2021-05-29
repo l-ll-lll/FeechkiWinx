@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/l-ll-lll/FeechkiWinx.git"
+  },
+  "author": "Anna Ugarova <ugarovaanna2308@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/l-ll-lll/FeechkiWinx/issues"
+  },
+  "homepage": "https://github.com/l-ll-lll/FeechkiWinx#readme"
+}
