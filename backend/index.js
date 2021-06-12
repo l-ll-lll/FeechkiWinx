@@ -4,6 +4,8 @@ const path = require('path')
 const DB_PATH = path.join(__dirname,'winx','winx.json');
 
 const server = http.createServer((req, res)=>{
+    //Добавить cors заголовок
+    // Добавить входные точки для лайка и дизлайка шутки
 if(req.url === '/joke'){
     if(req.method === 'GET'){
         fs.readFile(DB_PATH,(err,winx)=>{
