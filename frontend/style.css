@@ -9,7 +9,7 @@ input{
     width: 250px;
     height: 20px;
 }
-.button {
+.HS {
     border: 1px solid #000;
     color: rgb(0, 0, 0);
     font-weight: 900;
@@ -19,7 +19,7 @@ input{
     justify-content: flex-end;
 }
 
-.button:hover {
+.HS:hover {
     background: rgb(0, 0, 0);
     color: rgb(230, 238, 112);
 }
@@ -41,4 +41,8 @@ input{
 .dizlike{
     width: 50px;
     height: 20px;
+}
+.HSO{
+    display: flex;
+    justify-content: flex-end;
 }
