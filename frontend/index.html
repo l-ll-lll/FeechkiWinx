@@ -19,24 +19,26 @@
     <input type="text">
 	<button id="like" class="like">Like<button>
 	<button id="dizlike" class="dizlike">Dizlike</button>
-	<button>Отправить</button>
-
-	<p><select size="3" multiple name="hero[]">
-		<option disabled>Выберите героя</option>
-		<option value="Серый">Серый</option>
-		<option selected value="Розовый">Розовый</option>
-		<option value="Персиковый">Персиковый</option>
-		<option value="Кремовый">Кремовый</option>
-		<option value="Кремовый">Кремовый</option>
-	   </select></p>
 	   <p><input type="submit" value="Отправить"></p>
 	<button class="button" onclick="changeFone();">Изменить фон</button>
 	</div>
 	<div class="page-up">
 		<button><a href="#page-up">UP</a></button>
 	</div>
+	<div>
+	<form method="post" onsubmit="return false">
+		<p><input type="radio" class="color" id="Серый" name="button" value="#708090" onclick='change_color(this)'>Серый
+		<p><input type="radio"  class="color" id="Розовый" name="button" value="#FFB6C1" onclick='change_color(this)'>Розовый
+		<p><input type="radio"  class="color" id="Персиковый" name="button" value="#FFA07A" onclick='change_color(this)'>Персиковый
+			<p><input type="radio"  class="color" id="Кремовый" name="button" value="#F0E68C" onclick='change_color(this)'>Кремовый
+				<p><input type="radio"  class="color" id="Оранжевый" name="button" value="#F4A460" onclick='change_color(this)'>Оранжевый
+					<p><input type="radio"  class="color" id="Берюзовый" name="button" value="#008080" onclick='change_color(this)'>Берюзовый
+	 
+	</form>
+</div>
+	
 	<script src="script.js"></script>
 	<script src="xhr.js"></script>
-	<!--Подключить скрипт xhr.js-->
+	
 </body>
 </html>
