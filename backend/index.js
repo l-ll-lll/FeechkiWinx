@@ -28,11 +28,12 @@ if(req.url === '/joke'){
         text += chunk;
     });
     req.on("end",()=>{
-        let db = fs.readFile(DB_PATH);
+        console.log(text);
+        let db = fs.readFileSync(DB_PATH);
         let joke = JSON.parse(text);
         db = JSON.parse(db);
         db.push(joke);
-        fs.writeFile(DB_PATH,db);
+        fs.writeFile(DB_PATH,JSON.stringify(db),(err)=>{});
         res.writeHead(201);
         res.end();
     })            

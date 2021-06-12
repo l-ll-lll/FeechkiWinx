@@ -17,9 +17,18 @@
 	
 
 	<div id="joke"></div>
-    <input type="text">
-	<button id="like" class="like">Like<button>
-	<button id="dizlike" class="dizlike">Dizlike</button>
+    <input type="text" id="in" placeholder="шутка">
+		<input type="text" id="inau" placeholder="автор">
+	<button onclick="massage()">Отправить</button>
+
+	<p><select size="3" multiple name="hero[]">
+		<option disabled>Выберите героя</option>
+		<option value="Серый">Серый</option>
+		<option selected value="Розовый">Розовый</option>
+		<option value="Персиковый">Персиковый</option>
+		<option value="Кремовый">Кремовый</option>
+		<option value="Кремовый">Кремовый</option>
+	   </select></p>
 	   <p><input type="submit" value="Отправить"></p>
 	</div>
 	<div class="page-up">
