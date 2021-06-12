@@ -29,13 +29,31 @@
 		<option value="Кремовый">Кремовый</option>
 	   </select></p>
 	   <p><input type="submit" value="Отправить"></p>
-	<button class="button" onclick="changeFone();">Изменить фон</button>
+	<button id="HS" class="HS" onclick="changeFone();">Изменить фон</button>
 	</div>
 	<div class="page-up">
 		<button><a href="#page-up">UP</a></button>
 	</div>
+	<div id="HSO" class="HSO">
+	<form method="post" onsubmit="return false">
+		<p><input type="radio" class="color" id="Серый" name="button" value="#708090" onclick='change_color(this)'>Серый
+		<p><input type="radio"  class="color" id="Розовый" name="button" value="#FFB6C1" onclick='change_color(this)'>Розовый
+		<p><input type="radio"  class="color" id="Персиковый" name="button" value="#FFA07A" onclick='change_color(this)'>Персиковый
+			<p><input type="radio"  class="color" id="Кремовый" name="button" value="#F0E68C" onclick='change_color(this)'>Кремовый
+				<p><input type="radio"  class="color" id="Оранжевый" name="button" value="#F4A460" onclick='change_color(this)'>Оранжевый
+					<p><input type="radio"  class="color" id="Берюзовый" name="button" value="#008080" onclick='change_color(this)'>Берюзовый
+	 
+	</form>
+</div>
+	
 	<script src="script.js"></script>
 	<script src="xhr.js"></script>
+	
+	
+</body>
+</html>
+
 </body>
 </html>
  
+
