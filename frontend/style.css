@@ -10,13 +10,14 @@ input{
     height: 20px;
 }
 .HS {
+    display: flex;
     border: 1px solid #000;
     color: rgb(0, 0, 0);
     font-weight: 900;
     margin: 0 auto;
     width: 250px;
     height: 25px;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .HS:hover {
@@ -44,5 +45,5 @@ input{
 }
 .HSO{
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
