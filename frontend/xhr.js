@@ -7,7 +7,7 @@ xhr.onload = () => {
     let jokes = JSON.parse(xhr.response);
     jokes.map(joke => {
             document.getElementById('joke').innerHTML += `
-    Joke:${joke.joke}<br> Autor:${joke.autor}<br><a href='http://localhost:3000/like/${joke.id}'>Like (${joke.likes})</a><br><a class="dizlike">Dizlike</a><br><br>
+    Joke:${joke.joke}<br> Autor:${joke.autor}<br><a href='http://localhost:3000/like/${joke.id}'>Like (${joke.likes})</a><br><a href='http://localhost:3000/dislike/${joke.id}'>Dislike (${joke.dislikes})</a><br><br>
     `;
     })
 

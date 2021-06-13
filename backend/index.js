@@ -13,6 +13,14 @@ if(req.url.startsWith("/like")){
     fs.writeFileSync(DB_PATH,JSON.stringify(db),err=>{});
     res.end();
 }
+if(req.url.startsWith("/dislike")){
+    let index = req.url.lastIndexOf("/");
+    let id = req.url.substring(index+1);
+    let db = JSON.parse(    fs.readFileSync(DB_PATH,err=>{})    );
+    db[id].dislikes++;
+    fs.writeFileSync(DB_PATH,JSON.stringify(db),err=>{});
+    res.end();
+}
 if(req.url === '/joke'){
     if(req.method === 'GET'){
         fs.readFile(DB_PATH,(err,winx)=>{
